@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+header {
+    background-color: #333; /* Darker gray header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center the header content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #00a0e9; /* Blue on hover and active */
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("images/hero-image.jpg"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    display: inline-block; /* Make the content block element */
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #00a0e9; /* Blue button */
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Featured Playlists & Releases */
+.featured-content, .new-releases {
+    margin-top: 2rem;
+}
+
+.playlist-grid, .release-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+}
+
+.playlist, .release {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.playlist img, .release img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Background Image for Audio Section */
+#audio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    background-image: url("images/audio-bg.jpg"); /* Background image for audio */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Background Image for Video Section */
+#video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    background-image: url("images/video-bg.jpg"); /* Background image for video */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.audio-item, .video-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    text-align: center;
+}
+
+/* Increased Audio Player Size */
+.audio-item audio {
+    width: 100%;
+    height: 50px; /* Adjusting player height */
+    margin-top: 1rem;
+}
+
+/* Make All Videos the Same Size */
+.video-item video {
+    width: 100%;
+    max-width: 700px; /* Adjust width */
+    height: 400px; /* Fixed height */
+    margin-top: 1rem;
+}
